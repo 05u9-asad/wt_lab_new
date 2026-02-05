@@ -1,0 +1,164 @@
+/* ---------- Reset ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- Body ---------- */
+body {
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+header {
+    background-color: #f28b88;
+    color: white;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+#deviceType {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* ---------- Main ---------- */
+main {
+    padding: 25px 15px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ---------- Hero ---------- */
+#hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#heroTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#heroDescription {
+    font-size: 1rem;
+    color: #444;
+}
+
+/* ---------- Features ---------- */
+#features {
+    margin-bottom: 30px;
+}
+
+#features h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+#featureList {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.feature {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 0.95rem;
+}
+
+/* ---------- Contact ---------- */
+#contact h2 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+#contact p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactForm label {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+#contactForm input,
+#contactForm textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    width: 100%;
+}
+
+#contactForm textarea {
+    resize: vertical;
+}
+
+#contactForm button {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #f28b88;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #d66a67;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 0.85rem;
+    margin-top: 30px;
+}
+
+/* ---------- Responsive ---------- */
+
+/* Tablet */
+@media (min-width: 768px) {
+    #featureList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #heroTitle {
+        font-size: 2rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    #featureList {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #hero {
+        text-align: left;
+    }
+}
